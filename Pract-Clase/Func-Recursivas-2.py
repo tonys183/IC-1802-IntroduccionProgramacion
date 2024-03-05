@@ -20,7 +20,7 @@ def potenciaLog(base, exponente):
     elif exponente == 1:
         return base
     else:
-        media_potencia = potencia(base, exponente // 2) #Para calcular la mitad de esa potencia
+        media_potencia = potenciaLog(base, exponente // 2) #Para calcular la mitad de esa potencia
         resultado = media_potencia * media_potencia #Para volver al valor original
         if exponente % 2 == 1: 
             resultado *= base #Se multiplica porque al hacer // 2 se pierden valores
