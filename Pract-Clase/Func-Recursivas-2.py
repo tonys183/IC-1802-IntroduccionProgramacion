@@ -14,7 +14,7 @@ def decimalToBin(decimal):
     else:
         return (decimal % 2 + decimalToBin(decimal // 2) * 10) #Modulo de 2 al deciaml, luego se suma el valor de decimal division entera de 2 y se multiplica por 10
 
-def potencia(base, exponente):
+def potenciaLog(base, exponente):
     if exponente == 0:
         return 1
     elif exponente == 1:
