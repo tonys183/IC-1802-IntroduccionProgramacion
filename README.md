@@ -1,4 +1,4 @@
-# IC-1803-TallerProgra
+# IC-1802-IntroProgra
 
 Anthony Segura Paniagua  
 2024068397
