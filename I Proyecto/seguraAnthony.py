@@ -17,7 +17,7 @@ def encontrarCombina(C, R): #Función para encontrar todas las combinaciones del
         if len(denominadorString) < 5: #Condición por si el denominador tiene un largo < 5
             cerosFaltantes = 5 - len(denominadorString)
             denominadorString = '0' * cerosFaltantes + denominadorString
-
+        
         if digitosRepeti(numeradorString + denominadorString, R): #Verificar las repeticiones permitidas, por Numerador y Denominador juntos
             resultado = numerador / denominador
             if resultado == C:
@@ -27,10 +27,17 @@ def encontrarCombina(C, R): #Función para encontrar todas las combinaciones del
         print(f"No existe ninguna combinación para los valores de C={C} y R={R}")
 
 def main():
-    T = int(input("T: ")) #T = Número de casos a evaluar
-    for _ in range(T):
-        C, R = map(int, input("C y R (separados por espacio): ").split()) #C = Número al que le quiero encontrar combinaciones y R = Cantid.Max de veces que se puede repetir un dígito
-        encontrarCombina(C, R)
+    T = int(input()) #T = Número de casos a evaluar
+    if T <= 100 and T >= 1:
+        for _ in range(T):
+            C, R = map(int, input().split()) #C = Número al que le quiero encontrar combinaciones y R = Cantid.Max de veces que se puede repetir un dígito
+            if (C <= 20 and C >= 1) and (R <= 5 and R >= 1):
+                encontrarCombina(C, R)
+            else:
+                print(f"Los valores de C:{C} o R:{R} se encuentran fuera del rango")
+    else:
+        print("Inválido número de casos")
+    
 
 if __name__ == "__main__":
     main()
