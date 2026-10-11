@@ -1,5 +1,3 @@
-#---- SERIE 1 ----- 
-#Utilizando Pila
 def serie1P(n):
     if(n == 1):
         return 1
@@ -7,7 +5,6 @@ def serie1P(n):
 
 print(f"Serie 1 Pila: {serie1P(5)}")
 
-#Utilizando Cola
 def serie1C(n,a=0):
     if(n < 1):
         return a
@@ -17,8 +14,6 @@ print(f"Serie 1 Cola: {serie1C(5)}")
 
 
 
-#---- SERIE 2 ----- 
-#Utilizando Pila
 def serie2P(n):
     if n <= 3:
         return 1
@@ -26,7 +21,6 @@ def serie2P(n):
 
 print(f"Serie 2 Pila: {serie2P(8)}")
 
-#Utilizando Cola
 def serie2C(n,a1=1,a2=1,a3=1):
     if n <= 3:
         return a3
@@ -37,8 +31,6 @@ print(f"Serie 2 Cola: {serie2C(8)}")
 
 
 
-#---- SERIE 3 ----- 
-#Utilizando Pila
 def serie3P(n):
     if (n == 1):
         return 3
@@ -46,7 +38,6 @@ def serie3P(n):
 
 print(f"Serie 3 Pila: {serie3P(4)}")
 
-#Utilizando Cola    
 def serie3C(n,a=3):
     if (n == 1):
         return a
@@ -56,8 +47,6 @@ print(f"Serie 3 Cola: {serie3C(4)}")
 
 
 
-#---- SERIE 4 ----- 
-#Utilizando Pila
 def serie4P(n):
     if (n == 1):
         return 1
@@ -67,7 +56,6 @@ def serie4P(n):
 
 print(f"Serie 4 Pila: {serie4P(3)}")
 
-#Utilizando Cola    
 def serie4C(n,a1=1,a2=3):
     if (n == 1):
         return a1
@@ -79,8 +67,6 @@ print(f"Serie 4 Cola: {serie4C(3)}")
 
 
 
-#---- SERIE 5 ----- 
-#Utilizando Pila
 def serie5P(n):
     if (n == 1):
         return 2
@@ -92,7 +78,6 @@ def serie5P(n):
 
 print(f"Serie 5 Pila: {serie5P(5)}")
 
-#Utilizando Cola
 def serie5C(n,a1=2,a2=3,a3=4):
     if (n == 1):
         return a1
@@ -106,8 +91,6 @@ print(f"Serie 5 Cola: {serie5C(5)}")
 
 
 
-#---- SERIE 6 ----- 
-#Utilizando Pila
 def serie6P(n):
     if (n == 1):
         return 1024
@@ -115,7 +98,6 @@ def serie6P(n):
 
 print(f"Serie 6 Pila: {serie6P(2)}")
 
-#Utilizando Cola
 def serie6C(n, a=1024):
     if (n == 1):
         return a
@@ -125,8 +107,6 @@ print(f"Serie 6 Cola: {serie6C(2)}")
 
 
 
-#---- SERIE 7 ----- 
-#Utilizando Pila
 def serie7P(n):
     if (n == 1):
         return 1
@@ -136,7 +116,6 @@ def serie7P(n):
 
 print(f"Serie 7 Pila: {serie7P(7)}")
 
-#Utilizando Cola
 def serie7C(n, a1=1, a2=5):
     if (n == 1):
         return a1

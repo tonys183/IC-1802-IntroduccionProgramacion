@@ -1,6 +1,3 @@
-# ------------
-# 1. Máximo
-# ------------
 def maximo(vector):
     valorMax = 0
     posiMax = 0
@@ -12,9 +9,6 @@ def maximo(vector):
 
 print(f"Máximo: {maximo([33,10,12])}")
 
-# ------------
-# 2. Mínimo
-# ------------
 def minimo(vector):
     valorMin = vector[0]
     posMin = 1
@@ -26,9 +20,6 @@ def minimo(vector):
             
 print(f"Mínimo: {minimo([33,10,12])}")
 
-# ------------------------------------   
-# 3. Multiplicar escalar por vector
-# ------------------------------------
 def escalarVector(vector, num):
     res = []
     for i in vector:
@@ -37,9 +28,6 @@ def escalarVector(vector, num):
 
 print(f"Escalar Vector: {escalarVector([34,132,44], 0.5)}")
 
-# ----------------------
-# 4. Suma de vectores
-# ----------------------
 def sumaVectores(vector1, vector2):
     newVector = [0]*len(vector1)
     for i in range(len(vector1)):
@@ -48,9 +36,6 @@ def sumaVectores(vector1, vector2):
 
 print(f"Suma Vectores: {sumaVectores([1,2,3], [4,-3,-10])}")
 
-# ----------------------
-# 5. Producto punto
-# ----------------------
 def productoPunto(vector1, vector2, result=0):
     if vector1 == []:
         return result 
@@ -59,9 +44,6 @@ def productoPunto(vector1, vector2, result=0):
 
 print(f"Producto Punto: {productoPunto([2,4,8],[3,6,9])}")
     
-# ------------------------------
-# 6. Solución de un polinomio
-# ------------------------------
 def potencia(b, e):
     if not e:
         return 1
@@ -107,9 +89,6 @@ def solucionesPoli(coeficientes, epsilon=1e-10):
 
 print(f"Soluciones Polinomio: {solucionesPoli([3,2,6,2])}")
 
-# ------------------------------
-# 7. Distancia entre vectores
-# ------------------------------
 import math
 
 def potencia(b, e):
@@ -131,6 +110,3 @@ def distanciaVec(v, w):
 
 print(f"{distanciaVec([3,4],[5,8])}")
 
-# ----------------------------------------
-# 8. Vector a "g" grados de otro vector
-# ----------------------------------------

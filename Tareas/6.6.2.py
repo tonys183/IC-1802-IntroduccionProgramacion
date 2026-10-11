@@ -1,6 +1,3 @@
-# ------------------
-# 1. Gauss-Jordan
-# ------------------
 def cambiarFila(iFila, matriz):
     if matriz[iFila][iFila] != 1:
         pivote = matriz[iFila][iFila]
@@ -29,9 +26,6 @@ res = gaussJordan([[2, 1, -1, 8],[-3, -1, 2, -11],[-2, 1, 2, -3]])
 print("Gauss-Jordan:")
 printMatriz(res)
 
-# --------------------------------  
-# 2.  Exponenciación de matrices
-# --------------------------------
 def filaNula(largo):
     return [0] * largo
 

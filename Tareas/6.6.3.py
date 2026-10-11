@@ -1,14 +1,8 @@
-# ----------------------------
-# 1. Últimos n de una lista
-# ----------------------------
 def ultimosN(lista,n):
     return lista[-n:]
 
 print(f"Ultimos N: {ultimosN([1,2,3,4,5], 2)}")
 
-# -----------------------
-# 2. Ordenar una lista
-# -----------------------
 def ordenarLista(lista):
     if (lista == []):
         return []
@@ -24,9 +18,6 @@ def ordenarLista(lista):
 
 print(f"Lista Ordenada: {ordenarLista([4,9,2,5,1])}")
 
-# -----------------------------
-# 3. La lista tiene sublista
-# -----------------------------
 def verificarSub(lista):
     for i in lista:
         if (type(i) == type([])):
@@ -35,9 +26,6 @@ def verificarSub(lista):
 
 print(f"Verificiar Sublista: {verificarSub([1,2,3,4,5])}")
 
-# --------------------------------------------------------------------
-# 4. Encontrar una sublista desde la posición i hasta la posición j
-# --------------------------------------------------------------------
 def encontrarSub(lista, i, j):
     sublista = []
     for i in range(i, j):
@@ -46,9 +34,6 @@ def encontrarSub(lista, i, j):
 
 print(f"Encontrar Sublista: {encontrarSub([1,2,3,4,5], 3, 5)}")
 
-# ----------------------------------------------------------------------------
-# 5. Buscar la cantidad de elementos múltiplos de k en una lista de números
-# ----------------------------------------------------------------------------
 def multiplosLista(lista,k):
     cont = 0
     for i in lista:
@@ -58,9 +43,6 @@ def multiplosLista(lista,k):
             
 print(f"Multiplos de K: {multiplosLista([1,2,3,4,5,6], 2)}")
 
-# -------------------------------------
-# 6. Lista de los primeros n enteros
-# -------------------------------------
 def primerosN(n):
     enteros = []
     for i in range(1, n + 1):
@@ -69,9 +51,6 @@ def primerosN(n):
 
 print(f"Primeros N enteros: {primerosN(5)}")
 
-# ---------------------
-# 7. Primeros primos
-# ---------------------
 def criba(n):
     primos = [0]*2 + [1] * (n+1)
     p = 2
@@ -92,9 +71,6 @@ def primerosPrimos(n):
 
 print(f"Primeros Primos: {primerosPrimos(5)}")
 
-# --------------------------------
-# 8. Intercambiar dos elementos
-# --------------------------------
 def intercambiar(lista,i,j):
     lista[i] ^= lista[j]
     lista[j] ^= lista[i]
@@ -103,9 +79,6 @@ def intercambiar(lista,i,j):
 
 print(f"Intercambiar: {intercambiar([1,2,3,4,5], 1,4)}")
 
-# --------------------------
-# 9. Reemplazar elementos
-# --------------------------
 def remplazar(lista,a,b):
     for i in range(len(lista)):
         if lista[i] == a:
@@ -114,9 +87,6 @@ def remplazar(lista,a,b):
 
 print(f"Remplazar: {remplazar([1,2,3,1,1], 1,4)}")
 
-# -----------------------------------------
-# 10. Multiplicar elementos de una lista
-# -----------------------------------------
 def multi(lista):
     result = 1
     for i in lista:
@@ -125,9 +95,6 @@ def multi(lista):
 
 print(f"Multiplicación Lista: {multi([1,2,3,4,5])}")
 
-# --------------------------
-# 11. Eliminar duplicados
-# --------------------------
 def eliminarDupli(lista):
     listaNoDupli = []
     for elemento in lista:
@@ -137,9 +104,6 @@ def eliminarDupli(lista):
 
 print(f"Eliminar Duplicados: {eliminarDupli([7,8,7,3,2,3])}")
 
-# ---------------
-# 12. Invertir
-# ---------------
 def invertir(lista):
     inv = []
     for i in lista:
@@ -148,9 +112,6 @@ def invertir(lista):
 
 print(f"Invertir: {invertir([1,2,3,4,5])}")
 
-# --------------------
-# 13. Es Palíndromo
-# --------------------
 def remvEspacios(string):
     newString = ""
     for i in string.split():
@@ -166,9 +127,6 @@ def palindromo(string):
     
 print(f"Palíndromo: {palindromo("oso")}")
 
-# --------------------
-# 14. Combinaciones
-# --------------------
 def combinacion(lista, n):
     if len(lista) == n:
         return [lista]
@@ -184,9 +142,6 @@ def combinacion(lista, n):
 
 print(f"Combinaciones: {combinacion([6, 7, 8], 2)}")
 
-# --------------------
-# 15. Permutaciones
-# --------------------  
 def permutaciones(lista):
     res = [[]]
     for e in lista:
@@ -200,9 +155,6 @@ def permutaciones(lista):
 
 print(f"Permutaciones: {permutaciones(["A","B","C"])}")
 
-# ----------------------------------
-# 16. Exponenciación de conjuntos
-# ----------------------------------
 def expoConjuntos(lista, n):
     if n == 0:
         return [[]]

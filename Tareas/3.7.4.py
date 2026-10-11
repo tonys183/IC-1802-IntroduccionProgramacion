@@ -1,4 +1,3 @@
-# ----- 1 CONVERSOR BASES -----
 def converBases(num, base, baseToConvert):
     if (base < 2 or base > 10 or baseToConvert < 2 or baseToConvert > 10):
         return False
@@ -24,7 +23,6 @@ def converBases(num, base, baseToConvert):
 print("CONVERSOR BASE:", converBases(27, 8, 10))
 
 
-# ----- 2 CONVERSOR BASES (CON LETRAS) -----
 def convertir_base(num, base, baseToConvert):
     letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
               'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
